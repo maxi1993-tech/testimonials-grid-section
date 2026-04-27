@@ -163,6 +163,7 @@ body {
 .container article figure figcaption .box-name {
   display: flex;
   flex-direction: column;
+  gap: 0.25rem;
 }
 .container article figure figcaption .box-name h2 {
   color: var(--neutral-white);
