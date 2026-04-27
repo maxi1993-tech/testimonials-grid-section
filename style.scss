@@ -8,12 +8,14 @@
     --neutral-white: hsl(0, 0%, 100%);
     --neutral-grey-100: hsl(214, 17%, 92%);
     --neutral-grey-200: hsl(0, 0%, 81%);
+    --neutral-grey-300: hsl(213, 9%, 68%);
     --neutral-grey-400: hsl(224, 10%, 45%);
     --neutral-grey-500: hsl(217, 19%, 35%);
     --neutral-dark-blue: hsl(219, 29%, 14%);
     --neutral-black: hsl(0, 0%, 7%);
     --card-radius: 8px;
     --img-radius: 50%;
+    --border-img: 2px solid hsl(264, 82%, 80%);
     --size-preset-1: 1.25rem;
     --line-height-preset-1: 1.20;
     --size-preset-2: 0.8125rem;
@@ -25,6 +27,8 @@
     --gap-card: 2rem;
     --padding-content-card: 2rem;
     --gap-content-card: 1rem;
+    --weight-medium: 500;
+    --weight-semibold: 600;
     --font-family: "Barlow Semi Condensed", sans-serif;
 }
 
@@ -44,14 +48,153 @@ body {
 
 /* sr-only */
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Container */
+.container {
+    max-width: 19.0625rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-card);
+    margin: 0 auto;
+
+    /* Cards */
+    article {
+        border-radius: var(--card-radius);
+
+        &.card-one {
+            background-color: var(--primary-purple-500);
+        }
+
+        &.card-two {
+            background-color: var(--neutral-grey-500);
+        }
+
+        &.card-three {
+            background-color: var(--neutral-white);
+
+            figcaption {
+
+                img {
+                    border: none;
+                }
+
+                .box-name {
+
+                    h2 {
+                        color: var(--neutral-grey-500);
+                    }
+
+                    p {
+                        color: var(--neutral-grey-400);
+                    }
+                }
+            }
+
+            strong {
+                color: var(--neutral-grey-500);
+            }
+
+            blockquote {
+                color: var(--neutral-grey-400);
+            }
+        }
+
+        &.card-four {
+            background-color: var(--neutral-dark-blue);
+        }
+
+        &.card-five {
+
+            figcaption {
+
+                img {
+                    border: none;
+                }
+
+                .box-name {
+
+                    h2 {
+                        color: var(--neutral-grey-500);
+                    }
+
+                    p {
+                        color: var(--neutral-grey-300);
+                    }
+                }
+            }
+
+            strong {
+                color: var(--neutral-grey-500);
+            }
+
+            blockquote {
+                color: var(--neutral-grey-400);
+            }
+        }
+
+        figure {
+            display: flex;
+            flex-direction: column;
+            gap: var(--gap-content-card);
+            padding: var(--padding-content-card);
+
+            figcaption {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: flex-end;
+                gap: 1.0625rem;
+
+                img {
+                    border-radius: var(--img-radius);
+                    border: var(--border-img);
+                    width: 28px;
+                    height: 28px;
+                }
+
+                .box-name {
+                    display: flex;
+                    flex-direction: column;
+
+                    h2 {
+                        color: var(--neutral-white);
+                        font-size: var(--size-preset-2);
+                        line-height: var(--line-height-preset-2);
+                        font-weight: var(--weight-medium);
+                    }
+
+                    p {
+                        color: var(--primary-purple-50);
+                        font-size: var(--size-preset-4);
+                        line-height: var(--line-height-preset-4);
+                        font-weight: var(--weight-medium);
+                    }
+                }
+            }
+
+            strong {
+                color: var(--neutral-white);
+                font-weight: var(--weight-semibold);
+                font-size: var(--size-preset-1);
+                line-height: var(--line-height-preset-1);
+            }
+
+            blockquote {
+                color: var(--primary-purple-50);
+                font-weight: var(--weight-medium);
+                font-size: var(--size-preset-3);
+                line-height: var(--line-height-preset-3);
+            }
+        }
+    }
 }
 
 /* Footer */
