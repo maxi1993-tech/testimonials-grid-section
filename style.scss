@@ -1,5 +1,7 @@
 /* Variables */
 :root {
+    --color-background: hsl(300, 5%, 96%);
+    --color-footer: hsl(228, 45%, 44%);
     --primary-purple-50: hsl(260, 100%, 95%);
     --primary-purple-300: hsl(264, 82%, 80%);
     --primary-purple-500: hsl(263, 55%, 52%);
@@ -30,6 +32,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+/* Body */
+body {
+    background-color: var(--color-background);
+    font-family: var(--font-family);
     letter-spacing: 0;
 }
 
@@ -51,6 +59,6 @@
     text-align: center;
 
     a {
-        color: hsl(228, 45%, 44%);
+        color: var(--color-footer);
     }
 }
