@@ -15,6 +15,7 @@
     --neutral-black: hsl(0, 0%, 7%);
     --card-radius: 8px;
     --img-radius: 50%;
+    --box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
     --border-img: 2px solid hsl(264, 82%, 80%);
     --size-preset-1: 1.25rem;
     --line-height-preset-1: 1.20;
@@ -65,10 +66,12 @@ body {
     flex-direction: column;
     gap: var(--gap-card);
     margin: 0 auto;
+    padding: 4.5625rem 0;
 
     /* Cards */
     article {
         border-radius: var(--card-radius);
+        box-shadow: var(--box-shadow);
 
         &.card-one {
             background-color: var(--primary-purple-500);
@@ -76,6 +79,32 @@ body {
 
         &.card-two {
             background-color: var(--neutral-grey-500);
+
+            figcaption {
+
+                img {
+                    border: none;
+                }
+
+                .box-name {
+
+                    h2 {
+                        color: var(--neutral-grey-300);
+                    }
+
+                    p {
+                        color: var(--neutral-grey-300);
+                    }
+                }
+            }
+
+            strong {
+                color: var(--neutral-white);
+            }
+
+            blockquote {
+                color: var(--neutral-grey-100);
+            }
         }
 
         &.card-three {
@@ -110,6 +139,28 @@ body {
 
         &.card-four {
             background-color: var(--neutral-dark-blue);
+
+            figcaption {
+
+                .box-name {
+
+                    h2 {
+                        color: var(--neutral-white);
+                    }
+
+                    p {
+                        color: var(--neutral-white);
+                    }
+                }
+            }
+
+            strong {
+                color: var(--neutral-grey-200);
+            }
+
+            blockquote {
+                color: var(--neutral-grey-100);
+            }
         }
 
         &.card-five {
