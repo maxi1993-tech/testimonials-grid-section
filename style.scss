@@ -266,10 +266,20 @@ body {
         max-width: 40.4375rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
 
         .card-one {
             grid-column: 1 / -1;
+            align-self: start;
+        }
+
+        .card-four {
+            grid-column: 1 / -1;
+            align-self: start;
+        }
+
+        .card-five {
+            grid-column: 1 / -1;
+            align-self: start;
         }
     }
 }
