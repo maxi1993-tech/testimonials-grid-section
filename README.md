@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]
+- Solution URL: [[My solution](https://www.frontendmentor.io/solutions/css-grid-layout-with-scss-and-mobile-first-approach-wJPBoggasR)]
 - Live Site URL: [https://maxi1993-tech.github.io/testimonials-grid-section/](https://maxi1993-tech.github.io/testimonials-grid-section/)
 
 ## My process
