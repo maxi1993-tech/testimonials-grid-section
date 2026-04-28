@@ -18,13 +18,13 @@
     --box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
     --border-img: 2px solid hsl(264, 82%, 80%);
     --size-preset-1: 1.25rem;
-    --line-height-preset-1: 1.20;
+    --line-height-preset-1: 120%;
     --size-preset-2: 0.8125rem;
-    --line-height-preset-2: 1.10;
+    --line-height-preset-2: 110%;
     --size-preset-3: 0.8125rem;
-    --line-height-preset-3: 1.40;
+    --line-height-preset-3: 140%;
     --size-preset-4: 0.6875rem;
-    --line-height-preset-4: 1.10;
+    --line-height-preset-4: 110%;
     --gap-card: 2rem;
     --padding-content-card: 2rem;
     --gap-content-card: 1rem;
@@ -208,8 +208,8 @@ body {
                 img {
                     border-radius: var(--img-radius);
                     outline: var(--border-img);
-                    width: 30px;
-                    height: 30px;
+                    width: 28px;
+                    height: 28px;
                 }
 
                 .box-name {
