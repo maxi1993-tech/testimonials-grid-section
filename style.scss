@@ -164,6 +164,7 @@ body {
         }
 
         &.card-five {
+            background-color: var(--neutral-white);
 
             figcaption {
 
@@ -206,9 +207,9 @@ body {
 
                 img {
                     border-radius: var(--img-radius);
-                    border: var(--border-img);
-                    width: 28px;
-                    height: 28px;
+                    outline: var(--border-img);
+                    width: 30px;
+                    height: 30px;
                 }
 
                 .box-name {

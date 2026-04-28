@@ -127,6 +127,9 @@ body {
 .container article.card-four blockquote {
   color: var(--neutral-grey-100);
 }
+.container article.card-five {
+  background-color: var(--neutral-white);
+}
 .container article.card-five figcaption img {
   border: none;
 }
@@ -156,9 +159,9 @@ body {
 }
 .container article figure figcaption img {
   border-radius: var(--img-radius);
-  border: var(--border-img);
-  width: 28px;
-  height: 28px;
+  outline: var(--border-img);
+  width: 30px;
+  height: 30px;
 }
 .container article figure figcaption .box-name {
   display: flex;
